@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "63f48c2d-3e11-44c5-b06a-b329a41675af",
+		"name": "Request Api Logyca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Guarda los pares de numeros primos gemelos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/pairssave?n=10",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pairssave"
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guarda los n numeros primos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/primessave?n=16",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"primessave"
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Muestra los pares de numeros primos gemelos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/showpairs?n=10",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"showpairs"
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Caulcula los pares de numeros primos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/pairs?n=20",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pairs"
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calcula los n numeros primos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/primes?n=5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"primes"
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Muestra los pares de numeros primos gemelos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"chiquicachon@mail.com\",\n    \"nombre\": \"chiquicachon\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/showprimes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"showprimes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
